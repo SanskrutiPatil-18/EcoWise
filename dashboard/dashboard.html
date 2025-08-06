@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoWise Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Parallax Background -->
+  <div class="parallax-bg"></div>
+
+  <!-- Floating Elements -->
+  <div class="floating-element">
+    <i class="fas fa-leaf" style="font-size: 3rem; color: var(--teal-green);"></i>
+  </div>
+  <div class="floating-element">
+    <i class="fas fa-recycle" style="font-size: 2.5rem; color: var(--dark-green);"></i>
+  </div>
+  <div class="floating-element">
+    <i class="fas fa-seedling" style="font-size: 2rem; color: var(--teal-green);"></i>
+  </div>
+  <div class="floating-element">
+    <i class="fas fa-tree" style="font-size: 2.8rem; color: var(--dark-green);"></i>
+  </div>
+  <div class="floating-element">
+    <i class="fas fa-leaf" style="font-size: 1.8rem; color: var(--teal-green);"></i>
+  </div>
+  <div class="floating-element">
+    <i class="fas fa-seedling" style="font-size: 2.3rem; color: var(--dark-green);"></i>
+  </div>
+
+  <nav class="navbar">
+    <h1><i class="fas fa-leaf"></i> EcoWise</h1>
+
+    <div class="navbar-container">
+      <div class="nav-links">
+        <a href="../homePage/index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a>
+        <a href="../assistant/chatbot.html"><i class="fas fa-robot"></i> Recycle</a>
+        <a href="../faq/FAQ.html"><i class="fas fa-question-circle"></i> FAQs</a>
+      </div>
+    </div>
+
+    <button class="login-btn">
+      <i class="fas fa-sign-in-alt"></i>
+      Login
+    </button>
+  </nav>
+
+  <div class="container">
+    <!-- Intro -->
+    <section class="scroll-reveal">
+      <h2>Welcome to EcoWise</h2>
+      <p>This platform empowers citizens to recycle responsibly, connect with local NGOs, and learn about sustainable waste management—all through an agentic AI assistant. EcoWise is designed for simplicity and accessibility, enabling users from all backgrounds to participate in building cleaner, smarter cities. Whether you're unsure how to dispose of a specific item, want to volunteer, or are looking for reliable information on waste segregation, EcoWise guides you every step of the way. By integrating AI into everyday sustainability practices, we bridge the gap between awareness and action.</p>
+    </section>
+
+    <!-- Purpose -->
+    <section class="scroll-reveal">
+      <h2>Our Purpose</h2>
+      <p>We aim to build sustainable cities by simplifying how people interact with recycling systems. Our AI helps users classify waste, locate recycling centers, and stay informed. But more than that, our purpose is to inspire behavior change and empower communities with tools to take action. Through education and localized guidance, we support citizens, schools, businesses, and NGOs in developing better waste habits. EcoWise is not just about technology—it’s about creating a shared culture of responsibility, where everyone plays a role in shaping a sustainable urban future..</p>
+    </section>
+
+    <!-- Impact of Waste -->
+    <section class="scroll-reveal">
+      <h2>Impact of Waste on Our Planet</h2>
+      <p>Unmanaged waste contributes to pollution, health hazards, and climate change. Sustainable handling can reduce our carbon footprint and create a cleaner future. When waste is not properly sorted or processed, it often ends up in landfills or oceans, damaging ecosystems and threatening wildlife. Toxic materials can seep into the soil and water, affecting food chains and human health. Burning waste contributes to air pollution and greenhouse gases. However, by embracing recycling, composting, and mindful consumption, we can dramatically cut down on waste generation, conserve natural resources, and promote environmental resilience.</p>
+    </section>
+
+    <!-- Interactive Waste Cards Section -->
+    <section class="interactive-waste-section scroll-reveal">
+      <h2>Explore Waste Types</h2>
+      <p>Click on any card below to learn more about different types of waste and their environmental impact.</p>
+      
+      <div class="interactive-waste-grid">
+        <div class="waste-card" data-waste-type="organic">
+          <i class="fas fa-apple-alt waste-card-icon"></i>
+          <h3 class="waste-card-title">Organic Waste</h3>
+        </div>
+        
+        <div class="waste-card" data-waste-type="plastic">
+          <i class="fas fa-wine-bottle waste-card-icon"></i>
+          <h3 class="waste-card-title">Plastic Waste</h3>
+        </div>
+        
+        <div class="waste-card" data-waste-type="ewaste">
+          <i class="fas fa-mobile-alt waste-card-icon"></i>
+          <h3 class="waste-card-title">E-Waste</h3>
+        </div>
+        
+        <div class="waste-card" data-waste-type="metal">
+          <i class="fas fa-cube waste-card-icon"></i>
+          <h3 class="waste-card-title">Metal & Glass</h3>
+        </div>
+        
+        <div class="waste-card" data-waste-type="paper">
+          <i class="fas fa-newspaper waste-card-icon"></i>
+          <h3 class="waste-card-title">Paper Waste</h3>
+        </div>
+        
+        <div class="waste-card" data-waste-type="textile">
+          <i class="fas fa-tshirt waste-card-icon"></i>
+          <h3 class="waste-card-title">Textile Waste</h3>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Modal Overlay -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-card" id="modalCard">
+      <div class="modal-header">
+        <h3 id="modalTitle">
+          <i id="modalIcon"></i>
+          <span id="modalTitleText"></span>
+        </h3>
+        <button class="close-btn" id="closeBtn">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="modal-content" id="modalContent">
+        <!-- Content will be dynamically populated -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+<footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-leaf"></i>
+                        <span>EcoWise</span>
+                    </div>
+                    <p>Building sustainable cities of the future with intelligent AI solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EcoWise. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</html>

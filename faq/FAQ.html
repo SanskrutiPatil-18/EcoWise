@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - EcoWise AI</title>
+    <meta name="description" content="Frequently Asked Questions about EcoWise AI - Smart sustainable city solutions, waste management, traffic optimization, and citizen engagement.">
+    <link rel="stylesheet" href="FAQ.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-leaf"></i>
+                <span>EcoWise</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../homePage/index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../dashboard/dashboard.html" class="nav-link"><i class="fas fa-chart-line"></i> Dashboard</a>
+                </li>
+                <li><a href="../assistant/chatbot.html" class="nav-link"><i class="fas fa-robot"></i> Recycle</a></li>
+                <li class="nav-item">
+                    <a href="faq.html" class="nav-link active"><i class="fas fa-question-circle"> </i>FAQ</a>
+                </li>
+            </ul><!-- <li class="nav-item"> -->
+                <div class="nav-login">
+                    <button class="login-btn" onclick="toggleLoginDropdown()">
+                        <i class="fas fa-user"></i>
+                         Login
+                         <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="login-dropdown" id="loginDropdown">
+                        <a href="../homePage/Adminlogin.html" class="dropdown-item">
+                            <i class="fas fa-user-shield"></i>
+                            Admin Login
+                        </a>
+                        <a href="../homePage/userlogin.html" class="dropdown-item">
+                            <i class="fas fa-user"></i>
+                            User Login
+                        </a>
+                    </div>
+                </div><!-- </li></ul> -->
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="faq-hero">
+        <div class="container">
+            <div class="faq-hero-content">
+                <h1>Got Questions? We've Got Answers</h1>
+                <p>Everything you need to know about EcoWise AI and how it's transforming sustainable cities</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="faq-grid">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <div class="faq-question-content">
+                            <i class="fas fa-city"></i>
+                            <h3>What is EcoWise AI and how does it help sustainable cities?</h3>
+                        </div>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>EcoWise AI is an advanced artificial intelligence platform designed to optimize urban sustainability. It integrates multiple smart city technologies including traffic management, energy optimization, waste management, and citizen engagement systems. The platform uses real-time data analytics to provide actionable insights for city administrators and citizens, helping reduce carbon footprints, improve resource efficiency, and enhance quality of life in urban environments.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <div class="faq-question-content">
+                            <i class="fas fa-recycle"></i>
+                            <h3>How does EcoWise AI support waste aggregation and recycling management?</h3>
+                        </div>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our AI-powered waste management system uses smart sensors and IoT devices to monitor waste levels in real-time. The system optimizes collection routes, reduces fuel consumption, and increases recycling rates through intelligent sorting and citizen education programs. Smart bins with sensors automatically alert collection services when they're full, ensuring efficient pickup schedules and reducing overflow incidents.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <div class="faq-question-content">
+                            <i class="fas fa-comments"></i>
+                            <h3>Can citizens report environmental issues through the platform?</h3>
+                        </div>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! Citizens can easily report environmental issues through our mobile app or web platform. Users can submit reports with photos, location data, and descriptions for issues like illegal dumping, air pollution, water contamination, or damaged green spaces. The AI system automatically categorizes and prioritizes reports, ensuring quick response times from relevant city departments.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <div class="faq-question-content">
+                            <i class="fas fa-database"></i>
+                            <h3>What type of data does EcoWise AI collect and how is it used?</h3>
+                        </div>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We collect anonymized data including traffic patterns, energy consumption, air quality metrics, waste generation rates, and citizen feedback. This data is processed using AI algorithms to identify trends, predict future needs, and optimize city services. All data collection follows strict privacy regulations and is used solely for improving urban sustainability and service delivery.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <div class="faq-question-content">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Is my personal data safe on this platform?</h3>
+                        </div>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, your privacy and data security are our top priorities. We implement enterprise-grade encryption, secure data storage, and strict access controls. Personal information is anonymized before analysis, and users have full control over their data with options to view, export, or delete their information at any time. We comply with all international data protection regulations including GDPR.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 7 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <div class="faq-question-content">
+                            <i class="fas fa-hands-helping"></i>
+                            <h3>How can I contribute to making my city more sustainable using this app?</h3>
+                        </div>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Citizens can contribute in multiple ways: report environmental issues, participate in community challenges, share sustainable living tips, and provide feedback on city initiatives. The app also offers personalized recommendations for reducing your carbon footprint, tracking your sustainable actions, and connecting with like-minded community members. Every small action contributes to the larger goal of creating a sustainable city.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 8 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <div class="faq-question-content">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <h3>Does the system provide real-time pollution or air quality alerts?</h3>
+                        </div>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! EcoWise AI provides real-time air quality monitoring and pollution alerts. The system uses a network of sensors throughout the city to track air quality indicators including PM2.5, PM10, NO2, O3, and CO levels. Users receive instant notifications when air quality deteriorates, along with health recommendations and alternative route suggestions to minimize exposure.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 9 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <div class="faq-question-content">
+                            <i class="fas fa-cogs"></i>
+                            <h3>Can local governments customize EcoWise AI for their city's needs?</h3>
+                        </div>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! EcoWise AI is designed to be highly customizable. Local governments can configure the platform to match their specific infrastructure, policies, and sustainability goals. This includes customizing data collection parameters, setting local environmental targets, integrating with existing city systems, and branding the interface to reflect the city's identity. Our team works closely with each city to ensure optimal implementation.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 10 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <div class="faq-question-content">
+                            <i class="fas fa-bolt"></i>
+                            <h3>How does the system promote energy efficiency in smart buildings?</h3>
+                        </div>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>EcoWise AI integrates with building management systems to optimize energy consumption. The AI analyzes usage patterns, weather data, and occupancy levels to automatically adjust heating, cooling, and lighting systems. Smart meters provide real-time energy consumption data, while predictive analytics help identify maintenance needs and energy-saving opportunities. The system can reduce building energy consumption by up to 30%.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="faq-contact">
+        <div class="container">
+            <div class="contact-card">
+                <h2>Still Have Questions?</h2>
+                <p>Can't find what you're looking for? Our team is here to help!</p>
+                <div class="contact-buttons">
+                    <a href="mailto:support@ecocityai.com" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i>
+                        Contact Support
+                    </a>
+                    <a href="/about/index.html" class="btn btn-secondary">
+                        <i class="fas fa-home"></i>
+                        Back to Home
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-leaf"></i>
+                        <span>EcoWise</span>
+                    </div>
+                    <p>Building sustainable cities of the future with intelligent AI solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EcoWise. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="FAQ.js"></script>
+</body>
+</html> 

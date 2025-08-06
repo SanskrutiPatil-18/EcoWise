@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoWise AI Assistant</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Parallax Background -->
+    <div class="parallax-bg"></div>
+
+    <!-- Floating Elements -->
+    <div class="floating-element">
+      <i
+        class="fas fa-leaf"
+        style="font-size: 3rem; color: var(--teal-green)"
+      ></i>
+    </div>
+    <div class="floating-element">
+      <i
+        class="fas fa-recycle"
+        style="font-size: 2.5rem; color: var(--dark-green)"
+      ></i>
+    </div>
+    <div class="floating-element">
+      <i
+        class="fas fa-seedling"
+        style="font-size: 2rem; color: var(--teal-green)"
+      ></i>
+    </div>
+    <div class="floating-element">
+      <i
+        class="fas fa-tree"
+        style="font-size: 2.8rem; color: var(--dark-green)"
+      ></i>
+    </div>
+    <div class="floating-element">
+      <i
+        class="fas fa-leaf"
+        style="font-size: 1.8rem; color: var(--teal-green)"
+      ></i>
+    </div>
+    <div class="floating-element">
+      <i
+        class="fas fa-seedling"
+        style="font-size: 2.3rem; color: var(--dark-green)"
+      ></i>
+    </div>
+
+    <nav class="navbar">
+      <h1><i class="fas fa-leaf"></i> EcoWise</h1>
+
+      <div class="navbar-container">
+        <div class="nav-links">
+          <a href="../homePage/index.html"><i class="fas fa-home"></i> Home</a>
+          <a href="../dashboard/dashboard.html"
+            ><i class="fas fa-chart-line"></i> Dashboard</a
+          >
+          <a href="#"><i class="fas fa-robot"></i> Recycle</a>
+          <a href="../faq/FAQ.html"
+            ><i class="fas fa-question-circle"></i> FAQs</a
+          >
+        </div>
+      </div>
+
+      <button class="login-btn">
+        <i class="fas fa-sign-in-alt"></i>
+        Login
+      </button>
+    </nav>
+
+    <div class="container">
+      <!-- AI Assistant Section -->
+      <section class="scroll-reveal">
+        <h2>How Our AI Agent Helps</h2>
+        <p>
+          Use our intelligent AI chatbot to ask where and how to recycle
+          specific items, find nearby NGOs or drop-off points, or learn more
+          about eco-friendly practices. It's your personal guide to smarter
+          recycling and sustainable living.
+        </p>
+        <p>
+          With 24/7 availability, the assistant is not just a chatbot—it's your environmental companion, working with you toward a cleaner, greener, and smarter city.
+        </p>
+      </section>
+
+      <!-- Why Recycling Matters Section -->
+      <section class="scroll-reveal">
+        <h2>Why Recycling Matters</h2>
+        <div class="card-grid">
+          <div class="info-card">
+            <i class="fas fa-leaf card-icon"></i>
+            <h3 class="card-title">Conserves Resources</h3>
+            <p class="card-description">
+              Recycling reduces the need for raw materials, saving trees, water,
+              and energy. Every ton of paper recycled saves 17 trees and 7,000
+              gallons of water.
+            </p>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-recycle card-icon"></i>
+            <h3 class="card-title">Reduces Pollution</h3>
+            <p class="card-description">
+              Recycling decreases air and water pollution by reducing the need
+              for new material production. It also prevents waste from ending up
+              in landfills and oceans.
+            </p>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-globe card-icon"></i>
+            <h3 class="card-title">Fights Climate Change</h3>
+            <p class="card-description">
+              Recycling reduces greenhouse gas emissions by decreasing energy
+              consumption in manufacturing processes and preventing methane
+              release from landfills.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Understanding Waste Segregation Section -->
+      <section class="scroll-reveal">
+        <h2>Understanding Waste Segregation</h2>
+        <div class="card-grid">
+          <div class="info-card">
+            <i class="fas fa-trash-alt card-icon"></i>
+            <h3 class="card-title">Wet Waste</h3>
+            <p class="card-description">
+              Organic waste like food scraps, garden waste, and biodegradable
+              materials that can be composted to create nutrient-rich soil for
+              sustainable agriculture.
+            </p>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-box card-icon"></i>
+            <h3 class="card-title">Dry Waste</h3>
+            <p class="card-description">
+              Non-biodegradable materials like plastics, paper, glass, and
+              metals that can be recycled and processed into new products
+              through proper waste management.
+            </p>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-exclamation-triangle card-icon"></i>
+            <h3 class="card-title">Hazardous Waste</h3>
+            <p class="card-description">
+              Dangerous materials like batteries, electronics, and chemicals
+              that require special handling and disposal to prevent
+              environmental contamination.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "9bf817e8-ce8f-4165-8144-8c514d770c9a", // The ID of this integration.
+        region: "au-syd", // The region your integration is hosted in.
+        serviceInstanceID: "e19df3b9-27d9-44fa-86cc-0977dadb238a", // The ID of your service instance.
+        onLoad: async (instance) => {
+          await instance.render();
+        },
+        hideLauncher: true,
+      };
+      setTimeout(function () {
+        const t = document.createElement("script");
+        t.src =
+          "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
+          (window.watsonAssistantChatOptions.clientVersion || "latest") +
+          "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+    </script>
+  </body>
+
+  <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-leaf"></i>
+                        <span>EcoWise</span>
+                    </div>
+                    <p>Building sustainable cities of the future with intelligent AI solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EcoWise. All rights reserved.</p>
+            </div>
+        </div>
+  </footer>
+
+</html>
